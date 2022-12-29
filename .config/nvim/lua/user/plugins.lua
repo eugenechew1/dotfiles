@@ -56,8 +56,17 @@ return packer.startup(function(use)
 
   -- Colorschemes
   use 'marko-cerovac/material.nvim'
-  -- use 'folke/tokyonight.nvim'
-  -- cmp plugins
+
+  use { -- LSP Configuration & Plugins
+    'neovim/nvim-lspconfig',
+    -- Automatically install LSPs to stdpath for neovim
+    'williamboman/mason.nvim',
+    'williamboman/mason-lspconfig.nvim',
+
+    -- Useful status updates for LSP
+    'j-hui/fidget.nvim',
+  }
+  -- completion plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
@@ -70,17 +79,6 @@ return packer.startup(function(use)
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
-  -- LSP
-
-  use { -- LSP Configuration & Plugins
-    'williamboman/mason.nvim',
-    'williamboman/mason-lspconfig.nvim',
-    'neovim/nvim-lspconfig',
-
-    -- Useful status updates for LSP
-    'j-hui/fidget.nvim',
-  }
-  
   -- Telescope
   use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-media-files.nvim"
@@ -93,6 +91,8 @@ return packer.startup(function(use)
   }
   use "p00f/nvim-ts-rainbow"
   use "JoosepAlviste/nvim-ts-context-commentstring"
+
+  -- Useful for develping nvim plugins
   -- use "nvim-treesitter/playground"
 
   -- Git 
