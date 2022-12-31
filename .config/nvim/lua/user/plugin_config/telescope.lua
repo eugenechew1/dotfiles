@@ -1,4 +1,10 @@
+-- Prerequisite
+-- Ensure `ripgrep` is installed on your local machine.
+--
+-- FEDORA:
+-- `sudo dnf install ripgrep`
 local status_ok, telescope = pcall(require, "telescope")
+
 if not status_ok then
   return
 end

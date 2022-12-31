@@ -30,4 +30,10 @@ unset rc
 
 # SETTING the STARSHIP PROMPT
 eval "$(starship init bash)"
-alias config='/usr/bin/git --git-dir=/home/eugenechew/dotfiles/ --work-tree=/home/eugenechew'
+
+# ALIASES
+alias v=nvim
+alias config="/usr/bin/git --git-dir=/home/eugenechew/dotfiles/ --work-tree=/home/eugenechew"
+alias pk-add="sudo dnf install"
+alias pk-rem="sudo dnf uninstall"
+alias do-release-upgrade="sudo dnf --refresh upgrade;sudo dnf system-upgrade --releasever="
