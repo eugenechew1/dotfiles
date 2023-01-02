@@ -8,3 +8,10 @@
  ██████████   ░░░███████░      █████    █████       █████ ███████████ ██████████░░█████████ 
 ░░░░░░░░░░      ░░░░░░░       ░░░░░    ░░░░░       ░░░░░ ░░░░░░░░░░░ ░░░░░░░░░░  ░░░░░░░░░  
 ```
+
+# Installation
+
+TODO:
+- Run `Make Install` recepie for installing configuration
+  - `Install` with parameters for specific config file
+
