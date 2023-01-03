@@ -30,6 +30,11 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- Split window
+keymap("n", "ss", ":split<Return><C-w>w")
+keymap("n", "sv", ":vsplit<Return><C-w>w")
+
+
 -- Vertical Motion
 keymap("n", "<C-d>", "<C-d>zz", opts)
 keymap("n", "<C-u>", "<C-u>zz", opts)
@@ -60,6 +65,7 @@ keymap("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 keymap("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 keymap("n", "<leader>f", vim.lsp.buf.format)
+
 
 
 -- #######################################################################################
