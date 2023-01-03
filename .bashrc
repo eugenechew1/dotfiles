@@ -28,11 +28,12 @@ unset rc
 
 . ~/z/z.sh
 
+export EDITOR=nvim
 # SETTING the STARSHIP PROMPT
 eval "$(starship init bash)"
 
 # ALIASES
-alias v=nvim
+alias e=nvim
 alias config="/usr/bin/git --git-dir=/home/eugenechew/dotfiles/ --work-tree=/home/eugenechew"
 alias pk-add="sudo dnf install"
 alias pk-rem="sudo dnf uninstall"
