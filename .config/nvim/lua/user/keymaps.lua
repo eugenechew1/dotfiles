@@ -49,7 +49,14 @@ keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 keymap("n", "J", "mzJ`z")
+keymap("n", "n", "nzzzv")
+keymap("n", "N", "Nzzzv")
 
+keymap("n", "<leader>y", "\"+y")
+keymap("n", "<leader>Y", "\"+Y")
+
+keymap("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+keymap("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 -- #######################################################################################
 
 -- Insert --
@@ -76,11 +83,13 @@ keymap("v", "p", '"_dP', opts)
 
 -- Visual Block --
 -- Move text up and down
-keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
-keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
+keymap("x", "J", ":m '>+1<CR>gv=gv", opts)
+keymap("x", "K", ":m '<-2<CR>gv=gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
+keymap("x", "<leader>p", "\"_dP")
+keymap("v", "<leader>y", "\"+y")
 -- TODO: Toggle between material theme styles does not seem to be working 
 -- Enable style toggling
 --[[ vim.api.nvim_set_keymap('n', '<leader>ms', ':lua require("material.functions").toggle_style()<CR>', { noremap = true, silent = true })key ]]
