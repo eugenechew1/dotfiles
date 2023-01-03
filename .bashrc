@@ -29,6 +29,7 @@ unset rc
 . ~/z/z.sh
 
 export EDITOR=nvim
+export PAGER=bat
 # SETTING the STARSHIP PROMPT
 eval "$(starship init bash)"
 
