@@ -6,4 +6,6 @@
 # - Install starship
 # - install nvim
 # - install tilix
+# - install tmux
 
+# EOF
