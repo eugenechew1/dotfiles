@@ -39,3 +39,4 @@ alias config="/usr/bin/git --git-dir=/home/eugenechew/dotfiles/ --work-tree=/hom
 alias pk-add="sudo dnf install"
 alias pk-rem="sudo dnf uninstall"
 alias do-release-upgrade="sudo dnf --refresh upgrade;sudo dnf system-upgrade --releasever="
+alias gd="git diff"
