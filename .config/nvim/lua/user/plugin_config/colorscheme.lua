@@ -7,7 +7,7 @@ local colorschemes = "material"
 -- palenight
 -- lighter
 -- darker
-vim.g.material_style = "deep ocean"
+vim.g.material_style = "palenight"
 
 require('material').setup({
   contrast = {
