@@ -53,6 +53,7 @@ return packer.startup(function(use)
   use "nvim-lualine/lualine.nvim"
 	use({ "akinsho/toggleterm.nvim", commit = "aaeed9e02167c5e8f00f25156895a6fd95403af8" })
   use "ggandor/leap.nvim"
+  use "lukas-reineke/indent-blankline.nvim"
 
   -- Colorschemes
   use 'marko-cerovac/material.nvim'
