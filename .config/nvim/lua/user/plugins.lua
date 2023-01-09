@@ -46,8 +46,8 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp 
   use "numToStr/Comment.nvim"
-  use "kyazdani42/nvim-web-devicons"
-  use "kyazdani42/nvim-tree.lua"
+  use "nvim-tree/nvim-web-devicons"
+  use "nvim-tree/nvim-tree.lua"
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
@@ -58,6 +58,7 @@ return packer.startup(function(use)
   -- Colorschemes
   use 'marko-cerovac/material.nvim'
 
+  use 'jose-elias-alvarez/null-ls.nvim'
   use { -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
     -- Automatically install LSPs to stdpath for neovim
