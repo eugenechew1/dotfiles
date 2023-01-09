@@ -39,4 +39,9 @@ alias config="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 alias pk-add="sudo dnf install"
 alias pk-rem="sudo dnf uninstall"
 alias do-release-upgrade="sudo dnf --refresh upgrade;sudo dnf system-upgrade --releasever="
+
+# GIT
 alias gd="git diff"
+alias gst="git status"
+alias ga="git add"
+alias gcm="git status"
