@@ -54,6 +54,9 @@ return packer.startup(function(use)
 	use({ "akinsho/toggleterm.nvim", commit = "aaeed9e02167c5e8f00f25156895a6fd95403af8" })
   use "ggandor/leap.nvim"
   use "lukas-reineke/indent-blankline.nvim"
+  -- TODO: Find out more about how to configure coq_nvim
+  --[[ use({"ms-jpq/coq_nvim",branch = "coq"}) ]]
+  --[[ use({"ms-jpq/coq.artifacts",branch = "artifacts"}) ]]
 
   -- Colorschemes
   use 'marko-cerovac/material.nvim'
