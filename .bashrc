@@ -44,4 +44,4 @@ alias do-release-upgrade="sudo dnf --refresh upgrade;sudo dnf system-upgrade --r
 alias gd="git diff"
 alias gst="git status"
 alias ga="git add"
-alias gcm="git status"
+alias gcm="git commit"
