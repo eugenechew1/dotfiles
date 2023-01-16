@@ -119,16 +119,6 @@ _G.packer_plugins = {
     path = "/home/eugenechew/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["coq.artifacts"] = {
-    loaded = true,
-    path = "/home/eugenechew/.local/share/nvim/site/pack/packer/start/coq.artifacts",
-    url = "https://github.com/ms-jpq/coq.artifacts"
-  },
-  coq_nvim = {
-    loaded = true,
-    path = "/home/eugenechew/.local/share/nvim/site/pack/packer/start/coq_nvim",
-    url = "https://github.com/ms-jpq/coq_nvim"
-  },
   ["fidget.nvim"] = {
     loaded = true,
     path = "/home/eugenechew/.local/share/nvim/site/pack/packer/start/fidget.nvim",
@@ -148,11 +138,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/eugenechew/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
-  },
-  ["lazygit.nvim"] = {
-    loaded = true,
-    path = "/home/eugenechew/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
-    url = "https://github.com/kdheepak/lazygit.nvim"
   },
   ["leap.nvim"] = {
     loaded = true,
@@ -263,6 +248,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/eugenechew/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/eugenechew/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   }
 }
 
