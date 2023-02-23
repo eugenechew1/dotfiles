@@ -1,5 +1,4 @@
-
-FOO:="FOO"
+OS := $(shell uname)
 
 # print any variable
 print-%:
@@ -8,3 +7,7 @@ print-%:
 
 run: 
 	$(info $(FOO) $(origin FOO))
+
+install: 
+	@echo Operating system is $(OS)
+

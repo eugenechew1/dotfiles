@@ -52,7 +52,7 @@ require('mason').setup()
 
 -- Enable the following language servers
 -- Feel free to add/remove any LSPs that you want here. They will automatically be installed
-local servers = { 'clangd', 'rust_analyzer', 'sumneko_lua', 'tsserver', 'pyright' }
+local servers = { 'clangd', 'rust_analyzer', 'lua_ls', 'tsserver', 'pyright' }
 
 -- Ensure the servers above are installed
 require('mason-lspconfig').setup {
@@ -85,7 +85,7 @@ table.insert(runtime_path, 'lua/?/init.lua')
 
 -- tsserver
 require("lspconfig").tsserver.setup {
-  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+  filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
   cmd = { "typescript-language-server", "--stdio" },
   capabilities = capabilities
 }
@@ -97,8 +97,8 @@ require("lspconfig").pyright.setup {
   capabilities = capabilities
 }
 
--- sumneko_lua
-require('lspconfig').sumneko_lua.setup {
+-- lua_ls 
+require('lspconfig').lua_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
   settings = {
