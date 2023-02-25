@@ -86,6 +86,9 @@ telescope.setup {
     },
   },
   pickers = {
+    find_files = {
+      find_command = { "rg", "--ignore", "--hidden","--no-ignore","--files", "-L" }
+    }
     -- Default configuration for builtin pickers goes here:
     -- picker_name = {
     --   picker_config_key = value,
@@ -99,7 +102,7 @@ telescope.setup {
     media_files = {
       -- filetypes whitelist
       -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
-      filetypes = {"png", "webp", "jpg", "jpeg"},
+      filetypes = { "png", "webp", "jpg", "jpeg" },
       find_cmd = "rg" -- find command (defaults to `fd`)
     }
     -- extension_name = {
