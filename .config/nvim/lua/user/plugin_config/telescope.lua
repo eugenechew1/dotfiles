@@ -88,6 +88,9 @@ telescope.setup {
   pickers = {
     find_files = {
       find_command = { "rg", "--ignore", "--hidden","--no-ignore","--files", "-L" }
+    },
+    live_grep = {
+
     }
     -- Default configuration for builtin pickers goes here:
     -- picker_name = {
