@@ -100,6 +100,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Z setup
+PATH_TO_Z="/opt/homebrew/etc/profile.d/z.sh"
+source $PATH_TO_Z
+
 eval "$(starship init zsh)"
 
 # ALIASES
