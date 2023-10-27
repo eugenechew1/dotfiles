@@ -9,5 +9,6 @@ run:
 	$(info $(FOO) $(origin FOO))
 
 install: 
+	if [ $(OS) ]
 	@echo Operating system is $(OS)
 

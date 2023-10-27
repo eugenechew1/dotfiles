@@ -105,6 +105,7 @@ PATH_TO_Z="/opt/homebrew/etc/profile.d/z.sh"
 source $PATH_TO_Z
 
 eval "$(starship init zsh)"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
 # ALIASES
 alias e=nvim

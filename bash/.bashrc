@@ -32,6 +32,7 @@ export EDITOR=nvim
 export PAGER=bat
 # SETTING the STARSHIP PROMPT
 eval "$(starship init bash)"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
 # ALIASES
 alias e=nvim
