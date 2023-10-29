@@ -11,9 +11,18 @@ right_format = """$all"""
 # truncation_symbol = '…/'
 # disabled = true
 
+# Replace the '❯' symbol in the prompt with '▶'
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[▶](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+
+
+
 [directory.substitutions]
 '~/tests/starship-custom' = 'work-project'
 
+[javascript]
+format='[󰜈 $version](bold cyan)'
+detect_extensions = ['jsx']
 
 [aws]
 format = 'on [$symbol($profile )(\($region\) )]($style)'
