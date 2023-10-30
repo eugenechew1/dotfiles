@@ -8,7 +8,7 @@ fi
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+    PATH="$HOME/.local/share:$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 export PATH
 
@@ -32,6 +32,7 @@ export EDITOR=nvim
 export PAGER=bat
 # SETTING the STARSHIP PROMPT
 eval "$(starship init bash)"
+export STARSHIP_CONFIG=~/.config/starship.toml
 
 # ALIASES
 alias e=nvim

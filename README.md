@@ -10,6 +10,9 @@
 ```
 
 # Installation
+```
+stow --target ~/.config .
+```
 
 TODO:
 - Run `Make Install` recepie for installing configuration
