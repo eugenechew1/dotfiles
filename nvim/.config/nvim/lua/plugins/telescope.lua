@@ -91,7 +91,15 @@ return {
       pickers = {
         find_files = {
           find_command = { "rg", "--ignore", "--hidden", "--no-ignore", "--files", "-L" },
+          hidden = true,
         },
+        grep_string = {
+          additional_args = { "--hidden" },
+        },
+        live_grep = {
+          additional_args = { "--hidden" },
+        },
+
         -- Default configuration for builtin pickers goes here:
         -- picker_name = {
         --   picker_config_key = value,
