@@ -6,9 +6,8 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
-then
-    PATH="$HOME/.local/share:$HOME/.local/bin:$HOME/bin:$PATH"
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+	PATH="$HOME/.local/share:$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 export PATH
 
@@ -46,4 +45,5 @@ alias gd="git diff"
 alias gst="git status"
 alias ga="git add"
 alias gcm="git commit"
+alias gck="git checkout"
 alias gp="git push"
