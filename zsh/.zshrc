@@ -131,6 +131,10 @@ alias gcm="git commit"
 alias gp="git push"
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
+# ---- Eza (better ls) -----
+
+alias ls="eza --icons=always"
+
 # history setup
 HISTFILE=$HOME/.zhistory
 SAVEHIST=1000
