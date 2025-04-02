@@ -35,6 +35,8 @@ return {
         "pyright",
         "rust_analyzer",
         "ruby_lsp",
+        "gopls",
+        "astro",
       },
     })
   end,
