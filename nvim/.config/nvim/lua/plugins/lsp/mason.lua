@@ -35,6 +35,11 @@ return {
         "pyright",
         "rust_analyzer",
         "ruby_lsp",
+        "gopls",
+        "astro",
+        "intelephense", -- PHP
+        "clagd", -- C++
+        "zls", -- Zig
       },
     })
   end,
