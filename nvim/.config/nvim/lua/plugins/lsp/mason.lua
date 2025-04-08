@@ -37,6 +37,9 @@ return {
         "ruby_lsp",
         "gopls",
         "astro",
+        "intelephense", -- PHP
+        "clagd", -- C++
+        "zls", -- Zig
       },
     })
   end,
